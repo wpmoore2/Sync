@@ -9,14 +9,12 @@
 
 OneDrive_base: C:\Users\wmsoc\OneDrive
 NO_MIRROR:
-    C:\Users\wmsoc\home:
-        Documents:
-            NCSU: Documents\NCSU
-            Personal: Documents\Personal
-            P.Projects: Documents\P.Projects
-        Pictures:
-            GrampasMedia: Pictures\GrampasMedia
-            Saved Pictures: Pictures\Saved Pictures
-            Wallpapers: Pictures\Wallpapers
+    C:\Users\wmsoc:
+      Music\iTunes\iTunes Media\Music: Music\iTunes\Music
+      home\Documents:
+        NCSU: Documents\NCSU
+        P.Projects: Documents\P.Projects
+        Personal: Documents\Personal
+      home\Pictures: Pictures
 
 MIRROR:
