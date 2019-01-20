@@ -5,7 +5,7 @@ import sys
 # /S  - copy subdirectories, if not empty
 # /xo - only copy newer files (included those edited)
 SYNC_CMD = "robocopy /S /xo"
-CONFIG_PATH = 'sync_config.yml'
+CONFIG_PATH = 'C:/Users/wmsoc/home/Documents/P.Projects/Sync/sync_config.yml'
 
 #
 # Can specify to only print sync commands that would be executed
@@ -19,7 +19,7 @@ if "-q" in sys.argv:
     print ("Quiet mode")
     QUIET = True
 
-
+# Define sync function to be used below
 def sync(src, dest, base_path, mirror):
     ''' Define the recursive sync function. Essentially parses the config dict
         and calls 'sync_process' for each src:dest pair
@@ -66,3 +66,7 @@ if config.get("NO_MIRROR") and config['NO_MIRROR'] is not None:
 
 if config.get('MIRROR') and config['MIRROR'] is not None:
     sync("", config['MIRROR'], base_path, "/MIR")
+
+
+print ("Press any key to continue...")
+input()
