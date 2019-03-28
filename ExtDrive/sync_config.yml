@@ -1,4 +1,4 @@
-# Sync to OneDrive config file
+# Sync to External Hardrive (WadeExtDrive) config file
 
 # Follow the general format to specify directories that will be sync.
 # Folders (or files) in the same directory must have the same indention.
@@ -7,14 +7,14 @@
 
 # DEST will be the farthest right value, and will be relative to the "OneDrive_base" value.
 
-OneDrive_base: C:\Users\wmsoc\OneDrive
+base_dest: F:\FileBackup
 NO_MIRROR:
     C:\Users\wmsoc:
-      Music\iTunes\iTunes Media\Music: Music\iTunes\Music
-      home\Documents:
+      # Music\iTunes\iTunes Media\Music: Music
+      OneDrive\Documents:
         NCSU: Documents\NCSU
         P.Projects: Documents\P.Projects
         Personal: Documents\Personal
-      home\Pictures: Pictures
+      # OneDrive\Pictures: Pictures
 
 MIRROR:

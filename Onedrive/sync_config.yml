@@ -1,0 +1,20 @@
+# Sync to OneDrive config file
+
+# Follow the general format to specify directories that will be sync.
+# Folders (or files) in the same directory must have the same indention.
+
+# The highest level determines if the SRC and DEST directories will be mirrored or not.
+
+# DEST will be the farthest right value, and will be relative to the "OneDrive_base" value.
+
+base_dest: C:\Users\wmsoc\OneDrive
+NO_MIRROR:
+    C:\Users\wmsoc:
+      Music\iTunes\iTunes Media\Music: Music\iTunes\Music
+      home\Documents:
+        NCSU: Documents\NCSU
+        P.Projects: Documents\P.Projects
+        Personal: Documents\Personal
+      home\Pictures: Pictures
+
+MIRROR:
